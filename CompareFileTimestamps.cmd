@@ -38,7 +38,7 @@ IF "%targetfiledatetime%" GTR "%sourcefiledatetime%" (SET isnewer=0) ELSE (SET i
 ENDLOCAL & SET %~3=%isnewer% 
 EXIT /B
 
-REM Works with the "DD/MM/YYYY HH:MM" format
+@REM Works with the "DD/MM/YYYY HH:MM" format
 :get_file_datetime
 SETLOCAL
 SET filename=%~1
